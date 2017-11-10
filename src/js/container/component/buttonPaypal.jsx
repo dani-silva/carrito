@@ -6,6 +6,9 @@ class ButtonPaypal extends React.Component {
 	}
 
 	componentDidMount() {
+         
+		let amount = { total: `${this.props.total}.00` , currency: 'USD' };
+
 		paypal.Button.render({
 
 	        // Set your environment
@@ -35,7 +38,7 @@ class ButtonPaypal extends React.Component {
 	                payment: {
 	                    transactions: [
 	                        {
-	                            amount: { total: `${this.props.total}.00` , currency: 'USD' }
+	                        	amount
 	                        }
 	                    ]
 	                }

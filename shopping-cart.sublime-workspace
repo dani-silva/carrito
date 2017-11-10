@@ -1,0 +1,947 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pro",
+				"product"
+			],
+			[
+				"reacd",
+				"ReactDom"
+			],
+			[
+				"re",
+				"ReactDOMServer"
+			],
+			[
+				"Rou",
+				"Route"
+			],
+			[
+				"propt",
+				"propTypes"
+			],
+			[
+				"obj",
+				"Object"
+			],
+			[
+				"c",
+				"changes"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"Reaen",
+				"reactEngine"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"zoo",
+				"zoomArea"
+			],
+			[
+				"class",
+				"class"
+			],
+			[
+				"ro",
+				"rotate"
+			],
+			[
+				"drag",
+				"dragged"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"cir",
+				"circulo"
+			],
+			[
+				"max",
+				"maxColumns"
+			],
+			[
+				"com",
+				"componentWillMount"
+			],
+			[
+				"get",
+				"getDataProps"
+			],
+			[
+				"ini",
+				"initList"
+			],
+			[
+				"fir",
+				"numFirstViewColumns"
+			],
+			[
+				"icon",
+				"IconButton"
+			],
+			[
+				"coreo",
+				"correo_mensaje"
+			],
+			[
+				"corr",
+				"correo_mensaje"
+			],
+			[
+				"nombre",
+				"nombre_mensaje"
+			],
+			[
+				"flex",
+				"flex-start"
+			],
+			[
+				"fex",
+				"flex-start"
+			],
+			[
+				"bore",
+				"border"
+			],
+			[
+				"bri",
+				"briefcase"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"tran",
+				"transform"
+			],
+			[
+				"tras",
+				"transform"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"buttonC",
+				"buttonsBriefcase"
+			],
+			[
+				"min",
+				"min-window-front"
+			],
+			[
+				"section",
+				"section-front"
+			],
+			[
+				"add",
+				"addEventListener"
+			],
+			[
+				"alignms",
+				"align-items"
+			],
+			[
+				"overflw",
+				"overflow"
+			],
+			[
+				"fixeu",
+				"fixedButton"
+			],
+			[
+				"fixe",
+				"fixedButton"
+			],
+			[
+				"anim",
+				"animation"
+			],
+			[
+				"trafmo",
+				"transform"
+			],
+			[
+				"spa",
+				"space-around"
+			],
+			[
+				"overflo",
+				"overflow-y"
+			],
+			[
+				"tr",
+				"transform"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"stro",
+				"strokeStyle"
+			],
+			[
+				"in",
+				"innerHeight"
+			],
+			[
+				"qu",
+				"quadraticCurveTo"
+			],
+			[
+				"apare",
+				"aparecerFormMenu"
+			],
+			[
+				"apa",
+				"aparecerMenuForm"
+			],
+			[
+				"ceul",
+				"celularAnimacion"
+			],
+			[
+				"logo",
+				"logo-principal"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"bo",
+				"botonMenu"
+			],
+			[
+				"ff",
+				"ffa500"
+			],
+			[
+				"be",
+				"space-between"
+			],
+			[
+				"contemen",
+				"contenedorMenu"
+			],
+			[
+				"info",
+				"informacion-activado"
+			],
+			[
+				"qe",
+				"querySelector"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "public/styles.css",
+			"settings":
+			{
+				"buffer_size": 3466,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 711,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/container/app.jsx",
+			"settings":
+			{
+				"buffer_size": 1615,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "src/js/container/component/cart.jsx",
+			"settings":
+			{
+				"buffer_size": 1615,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "cart.jsx"
+			}
+		},
+		{
+			"file": "src/js/container/component/products.jsx",
+			"settings":
+			{
+				"buffer_size": 1039,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "products.jsx"
+			}
+		},
+		{
+			"file": "src/js/container/component/buttonPaypal.jsx",
+			"settings":
+			{
+				"buffer_size": 1692,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 390.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"side",
+				"View: Toggle Side Bar"
+			],
+			[
+				"sid",
+				"View: Toggle Side Bar"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/daniel/Documentos/proyectos/shopping-cart"
+	],
+	"file_history":
+	[
+		"/home/daniel/Documentos/proyectos/shopping-cart/package.json",
+		"/home/daniel/Documentos/proyectos/shopping-cart/.gitignore",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/buttonPaypal.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/index.html",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/product.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/index.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/styles.css",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionGallery.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/profile.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/package.json",
+		"/home/daniel/Documentos/proyectos/toumap/public/styles.css",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/viewProfile.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionOptions.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/app.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/homelist.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionDesc.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/directory.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/listDirectory.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionFollow.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/profileImage.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/followLinks.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/recoverExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/nav.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/index.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/public/index.html",
+		"/home/daniel/Documentos/proyectos/toumap/server.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/views/index.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/navExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/explorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/viewHome.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionPromo.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionMap.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/share.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/routes.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/home.jsx",
+		"/var/www/toumap/vistas/perfiles.view.php",
+		"/var/www/toumap/vistas/header.view.php",
+		"/var/www/toumap/vistas/pie-pagina.view.php",
+		"/var/www/toumap/index.php",
+		"/var/www/toumap/perfiles.php",
+		"/var/www/toumap/js/perfiles.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/header.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionComments.jsx",
+		"/var/www/danielsilva/vistas/articulos.vista.php",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/footer.jsx",
+		"/media/daniel/EA64-0861/DanielSilva/SitioWeb v2.1/blog.php",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/untitled.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/profile.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/directory.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/message.jsx",
+		"/media/daniel/EA64-0861/toumap/diseño_bd.json",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/loginExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/registerExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/item.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/buttonExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/public/app/styles.css",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/explorer.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/containers/Canvas.jsx",
+		"/home/daniel/Documentos/proyectos/finshape-dev/src/app/components/FirstComponent.jsx",
+		"/home/daniel/Documentos/proyectos/finshape-dev/src/index.html",
+		"/home/daniel/Documentos/proyectos/finshape-dev/src/app/index.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/homelist.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/nav.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/explorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/recoverExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/loginExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/registerExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/header.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/.gitignore",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/navExplorer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/message.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/component/item.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/containers/DinamicTable.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/components/Forum/ForumMenu.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/nav.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/components/Forum/ViewForums.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/components/LoginForm.jsx",
+		"/home/daniel/Documentos/proyectos/hera/client/src/containers/ForumContainer.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/js/index.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/views/styles.css",
+		"/home/daniel/Documentos/proyectos/hera/index.js",
+		"/home/daniel/Documentos/proyectos/hera/server/routes/modules/Forum/Forum.js",
+		"/home/daniel/Documentos/proyectos/hera/server/routes/modules/Calendar/Calendar.js",
+		"/home/daniel/Documentos/proyectos/hera/server/routes/passport_mysql.js",
+		"/home/daniel/Documentos/proyectos/hera/server/routes/auth.js",
+		"/home/daniel/Documentos/proyectos/hera/server/routes/modules/School/School.js",
+		"/home/daniel/Documentos/proyectos/toumap/src/views/index.js",
+		"/home/daniel/Documentos/proyectos/toumap/.babelrc",
+		"/home/daniel/Documentos/proyectos/toumap/src/views/index.pug",
+		"/home/daniel/Documentos/proyectos/toumap/public/app/bundle.js",
+		"/home/daniel/Documentos/proyectos/toumap/index.js",
+		"/home/daniel/Documentos/proyectos/finshape-dev/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/finshape-dev/package.json",
+		"/home/daniel/Documentos/pruebas_react/reactjs/src/app/index.js",
+		"/home/daniel/Documentos/pruebas_react/reactjs/src/app/components/Header.js",
+		"/home/daniel/Documentos/proyectos/hera/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/hera/package.json",
+		"/home/daniel/Documentos/proyectos/toumap/src/views/user.pug",
+		"/home/daniel/Documentos/proyectos/toumap/src/views/place.pug",
+		"/home/daniel/Documentos/proyectos/toumap/public/index.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/views/layout.pug",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/crud-mysql/app.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/controllers/team-controller.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/routers/team-router.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/app.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/views/edit.pug",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/views/index.pug",
+		"/home/daniel/Documentos/proyectos/toumap/src/dev/index.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/res-express.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/req-express.js",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/fs-express.js",
+		"/home/daniel/Documentos/proyectos/toumap/index.pug",
+		"/home/daniel/Documentos/proyectos/curso-nodejs/express.js",
+		"/home/daniel/Documentos/proyectos/hera/client/src/containers/1.- cargar imagen.",
+		"/home/daniel/Documentos/nodejs/testing/src/app/index.jsx",
+		"/home/daniel/rockyou.txt",
+		"/media/daniel/EA64-0861/toumap/Maquetacion/v1.2/17097412_10154134504945388_3809363069571320768_o.jpg",
+		"/home/daniel/Documentos/nodejs/hera/client/src/containers/DinamicTable.jsx",
+		"/home/daniel/Documentos/nodejs/hera/client/src/containers/ForumContainer.jsx",
+		"/home/daniel/Documentos/nodejs/hera/client/src/routes.js",
+		"/home/daniel/Documentos/nodejs/hera/client/src/containers/Canvas.jsx",
+		"/home/daniel/Documentos/nodejs/hera/docs/hera.sql",
+		"/home/daniel/Documentos/nodejs/hera/docs/fullDB.bak",
+		"/home/daniel/Documentos/nodejs/react-raphael-example/js/app.js",
+		"/home/daniel/Documentos/nodejs/hera/node_modules/d3/index.js",
+		"/home/daniel/Documentos/nodejs/react-raphael-example/templates/index.html"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"span",
+			"sectionDesc",
+			"SectionDesc",
+			"avatar",
+			"border",
+			"ProfileImage",
+			"hoverImg",
+			"explorer",
+			"Points",
+			"points",
+			"data",
+			"points",
+			"sectionDesc",
+			"SectionDesc",
+			"SectionGallery",
+			"1",
+			"true",
+			"img",
+			"i",
+			"cursor",
+			"sectionMap",
+			"SectionMap",
+			"SectionGallery",
+			"sectionGallery",
+			"SectionGallery",
+			"sectionMap",
+			"SectionMap",
+			"explorerEvent",
+			"url",
+			"viewMap",
+			"ViewMap",
+			"containers",
+			"Profile",
+			"\t\t\n",
+			"5rem",
+			"time",
+			"808080",
+			"f5f5f5",
+			"10px",
+			"5",
+			"png",
+			"Object",
+			"bind",
+			"onBlur",
+			"validation",
+			"main",
+			"app",
+			"viewWindow",
+			"Message",
+			"this",
+			"696969",
+			"points",
+			"10",
+			"8",
+			"div",
+			"span",
+			"main",
+			"NavExplorer",
+			"div",
+			"Nav",
+			"Header",
+			"section",
+			"component",
+			"input",
+			"LoginExplorer",
+			"console",
+			"h2",
+			"userName",
+			"user",
+			"userChange",
+			"true",
+			"FormExplorer",
+			"NavExplorer",
+			"viewButtons",
+			"view",
+			"butonEvent",
+			"header",
+			"Header",
+			"section",
+			"50",
+			"200",
+			"rotate",
+			"image",
+			"value",
+			"200",
+			"container",
+			"width",
+			"setState",
+			"handleFirstSlider",
+			"firstSlider",
+			"400",
+			"300",
+			"g",
+			"50",
+			"height",
+			"width",
+			"x",
+			"));\n",
+			"svg",
+			"line",
+			"triangulo",
+			"rect",
+			"image",
+			"rect",
+			"var",
+			"endPoint",
+			"formData",
+			"FormData",
+			"index",
+			");\n",
+			"numFirstViewColumns",
+			"keys",
+			"list",
+			"onClick",
+			"listColumns",
+			"changeColumns",
+			"let",
+			"span",
+			"keyframes",
+			"blue",
+			"about",
+			"blue",
+			"left",
+			"family",
+			"comfortaa",
+			"menu",
+			"js",
+			"line-"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"{\n",
+			");\n"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "public/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3466,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1637,
+								1637
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1131.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 711,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								704,
+								704
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "src/js/container/app.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								399,
+								399
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/js/container/component/cart.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								662,
+								662
+							]
+						],
+						"settings":
+						{
+							"auto_name": "cart.jsx",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/js/container/component/products.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								413,
+								413
+							]
+						],
+						"settings":
+						{
+							"auto_name": "products.jsx",
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
+						},
+						"translation.x": 105.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/js/container/component/buttonPaypal.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1692,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1159,
+								1159
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": -0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 29.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.362068965517,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 23.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "shopping-cart.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documentos/TRABAJO/DanielSilva/SitioWeb (copia)/index.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 235.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -34,7 +34,6 @@ button {
 		border-bottom: 1px solid #cfcfcf;
 	}
 
-
 		.title {
 			color: #3498DB;
 			font-size: 1.5rem;
@@ -63,6 +62,7 @@ button {
 			.buttonCart {
 				padding: 1rem;
 				cursor: pointer;
+				height: 4rem;
 			}
 
 		.modalCart {
@@ -140,6 +140,7 @@ button {
 	.shop {
 		background: #fafafa;
 		height: calc( 100% - 5rem);
+		padding-top: 2rem;
 	}
 
 
