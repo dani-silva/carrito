@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"PRO",
+				"product"
+			],
+			[
 				"pro",
 				"product"
 			],
@@ -256,57 +260,38 @@
 	"buffers":
 	[
 		{
-			"file": "public/styles.css",
-			"settings":
-			{
-				"buffer_size": 3466,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "package.json",
-			"settings":
-			{
-				"buffer_size": 711,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "src/js/container/app.jsx",
 			"settings":
 			{
-				"buffer_size": 1615,
+				"buffer_size": 1943,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "src/js/container/component/cart.jsx",
-			"settings":
-			{
-				"buffer_size": 1615,
-				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "cart.jsx"
 			}
 		},
 		{
 			"file": "src/js/container/component/products.jsx",
 			"settings":
 			{
-				"buffer_size": 1039,
+				"buffer_size": 1268,
 				"encoding": "UTF-8",
 				"line_ending": "Unix",
 				"name": "products.jsx"
 			}
 		},
 		{
-			"file": "src/js/container/component/buttonPaypal.jsx",
+			"file": "src/js/container/component/cart.jsx",
 			"settings":
 			{
-				"buffer_size": 1692,
+				"buffer_size": 1684,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/styles.css",
+			"settings":
+			{
+				"buffer_size": 3794,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -364,18 +349,26 @@
 	},
 	"expanded_folders":
 	[
-		"/home/daniel/Documentos/proyectos/shopping-cart"
+		"/home/daniel/Documentos/proyectos/shopping-cart",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component"
 	],
 	"file_history":
 	[
-		"/home/daniel/Documentos/proyectos/shopping-cart/package.json",
-		"/home/daniel/Documentos/proyectos/shopping-cart/.gitignore",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/buttonPaypal.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/public/index.html",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/product.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/cart.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/buttonPaypal.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/webpack.config.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/index.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/public/styles.css",
+		"/home/daniel/Documentos/proyectos/shopping-cart/package.json",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/app.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/.gitignore",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/index.html",
+		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionGallery.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/profile.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/package.json",
@@ -492,10 +485,7 @@
 		"/home/daniel/Documentos/nodejs/hera/client/src/routes.js",
 		"/home/daniel/Documentos/nodejs/hera/client/src/containers/Canvas.jsx",
 		"/home/daniel/Documentos/nodejs/hera/docs/hera.sql",
-		"/home/daniel/Documentos/nodejs/hera/docs/fullDB.bak",
-		"/home/daniel/Documentos/nodejs/react-raphael-example/js/app.js",
-		"/home/daniel/Documentos/nodejs/hera/node_modules/d3/index.js",
-		"/home/daniel/Documentos/nodejs/react-raphael-example/templates/index.html"
+		"/home/daniel/Documentos/nodejs/hera/docs/fullDB.bak"
 	],
 	"find":
 	{
@@ -660,90 +650,58 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "public/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3466,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1637,
-								1637
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1131.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "package.json",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 711,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								704,
-								704
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 2,
 					"file": "src/js/container/app.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1615,
+						"buffer_size": 1943,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								399,
-								399
+								1282,
+								1282
 							]
 						],
 						"settings":
 						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 966.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/js/container/component/products.jsx",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								677,
+								677
+							]
+						],
+						"settings":
+						{
+							"auto_name": "products.jsx",
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
@@ -754,78 +712,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 2,
 					"file": "src/js/container/component/cart.jsx",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1615,
+						"buffer_size": 1684,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								662,
-								662
-							]
-						],
-						"settings":
-						{
-							"auto_name": "cart.jsx",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "src/js/container/component/products.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1039,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								413,
-								413
-							]
-						],
-						"settings":
-						{
-							"auto_name": "products.jsx",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 105.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/js/container/component/buttonPaypal.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1692,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1159,
-								1159
+								496,
+								496
 							]
 						],
 						"settings":
@@ -833,11 +733,40 @@
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 126.0,
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "public/styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -860,18 +789,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.362068965517,
 			1.0
 		],
 		"rows":
@@ -939,7 +861,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 235.0,
+	"side_bar_width": 124.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

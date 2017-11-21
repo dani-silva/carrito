@@ -20,7 +20,8 @@ const Modal = (props) => (
 			 			props.buy.map( (product, i) => 
 		 				<li className='itemModalCart' key={i}>
 			 				<Product style='productModal' product={ product } /> 
-			 				<span onClick={()=>{props.delete(i)}} className='buttonDelete'> <img src='images/cancel.svg' /> </span>
+			 				<span className='itemsModal' > { product.items } </span>
+			 				<button onClick={()=>{props.delete(i)}} className='buttonDelete'> <img src='images/cancel.svg' /> </button>
 			 			</li>
 			 			)
 			 		}

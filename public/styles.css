@@ -3,7 +3,7 @@
 	padding: 0;
 	margin: 0;
 	font-size: 20px;
-	font-family: sans-serif, Georgia;
+	font-family: helvetica;
 }
 
 ul {
@@ -17,6 +17,7 @@ a {
 button {
 	border: none;
 	outline: none;
+	background: none;
 }
 
 .container {
@@ -101,18 +102,33 @@ button {
 			.itemModalCart:hover {
 				background: #fafafa;
 			}
-				
-				.productModal h3 {
-					color: #696969;
-				}
-				
-				.productModal span {
-					color: #696969;
-					font-size: .8rem;
-				}
 
-				.productModal p {
-					display: none;
+				.productModal {
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: center;
+					flex-grow: 1;
+				}
+					
+					.productModal h3 {
+						color: #696969;
+					}
+					
+					.productModal span {
+						color: #696969;
+						font-size: .8rem;
+					}
+
+					.productModal p {
+						display: none;
+					}
+		
+				.itemsModal {
+					display: flex;
+					align-items: center;
+					color: #696969;
+					padding: 1rem;
 				}
 
 				.buttonDelete {

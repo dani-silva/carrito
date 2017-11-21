@@ -41,7 +41,29 @@ class App extends React.Component {
 	addProduct(product) {
 		let addCart = this.state.cart;
 
-		addCart.push(product);
+		if (addCart.some( el => el.name == product.name)) {
+
+			let addItemCart = addCart;
+
+			addItemCart.map(
+
+				element => element.name == product.name 
+
+					? element.items += 1
+
+					: null
+
+			)
+
+			addCart = addItemCart;
+
+		} else {
+
+			product.items = 1;
+
+			addCart.push(product);
+
+		}
 
 		this.setState({
 			cart: addCart
@@ -70,7 +92,7 @@ class App extends React.Component {
 
 		let total = this.state.total;
 
-		this.state.cart.map((product) => total += product.price );
+		this.state.cart.map((product) => product.items == 1 ? total += product.price : total += product.price * product.items);
 
 	 	return(
 	 		<div className='container'>

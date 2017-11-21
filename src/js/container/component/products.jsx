@@ -17,7 +17,8 @@ class Products extends React.Component {
 		 				
 		 				<li className='contProductShop' key={i}>
 
-			 				<Product style='productShop' product={ product } /> 
+			 				<Product style='productShop' product={ product } />
+
 			 				{ 
 			 					product.name == 'Master Account'
 
@@ -25,16 +26,22 @@ class Products extends React.Component {
 
 				 					this.props.cart.some( element => element.name == 'Master Account')
 
-				 					? <button className='buttonAdd disable'> Add 1 </button>
+				 					? <button className='buttonAdd disable'> Amount 1 </button>
 				 					
 				 					: <button onClick={() => { this.props.addProduct( product ) }} className='buttonAdd'> Add </button>
 
 
 				 				: 
 
-				 					<button onClick={() => { this.props.addProduct( product ) }} className='buttonAdd'> Add </button>
+				 					this.props.cart.some( element => element.id == product.id)
+
+				 					? <button onClick={() => { this.props.addProduct( product ) }} className='buttonAdd'> Amount { product.items } </button>
+				 					
+				 					: <button onClick={() => { this.props.addProduct( product ) }} className='buttonAdd'> Add </button>
+				 					
 
 			 				}
+
 			 			</li>
 		 			)
 		 		}
