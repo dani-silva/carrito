@@ -8,11 +8,13 @@ let SRC_DIR  = path.resolve(__dirname, 'src');
 
 let config = {
 
-	entry: `${ SRC_DIR }/js/index.jsx`,
+	entry: {
+		bundle: `${ SRC_DIR }/js/index.jsx`
+	},
 
 	output: {
 		path: `${ DIST_DIR }/`,
-		filename: 'bundle.js',
+		filename: '[name].js',
 		publicPath: '/app/'
 	},
 

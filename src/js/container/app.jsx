@@ -90,6 +90,8 @@ class App extends React.Component {
 
 	render(){
 
+		console.log(this.props.alert)
+
 		let total = this.state.total;
 
 		this.state.cart.map((product) => product.items == 1 ? total += product.price : total += product.price * product.items);

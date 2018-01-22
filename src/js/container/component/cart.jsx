@@ -35,7 +35,7 @@ const Modal = (props) => (
 
 			? null
 
-			: <ButtonPaypal total={props.total} />
+			: <ButtonPaypal cart={props.buy} />
 			
 		}
 

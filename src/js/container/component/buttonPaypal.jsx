@@ -3,63 +3,44 @@ import React from 'react';
 class ButtonPaypal extends React.Component {
 	constructor(props) {
 		super(props)
+		this.state = {
+			status: 'PayPal'
+		}
+		
+		this.buy = this.buy.bind(this)
 	}
 
-	componentDidMount() {
-         
-		let amount = { total: `${this.props.total}.00` , currency: 'USD' };
+	buy(items) {
 
-		paypal.Button.render({
+		this.setState({
+			status: 'Wait'
+		})
 
-	        // Set your environment
+		document.querySelector('.contButtonPay').classList.add('process')
 
-	        env: 'sandbox', // sandbox | production
+		let jsonSend = encodeURIComponent(JSON.stringify(items, ' ', ''));
 
-	        // Specify the style of the button
+		let http = new XMLHttpRequest();
 
-	        style: {
-	            label: 'paypal',
-	            size:  'responsive',    // small | medium | large | responsive
-	            shape: 'rect',     // pill | rect
-	            color: 'blue',     // gold | blue | silver | black
-	            tagline: false    
-	        },
+		http.onreadystatechange = () => {
 
-	        // PayPal Client IDs - replace with your own
-	        // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+			if (http.readyState == 4 && http.status == 200) {
 
-	        client: {
-	            sandbox:    'AfM7yYBMajgKJEMcHH5Y8vAA1piwnG0cAt42CtitV03hTg0JhyslqVbMxe2fha1abw_ZUddc88othJ3Y',
-	            production: '<insert production client id>'
-	        },
+				window.location.href = http.response;
 
-	        payment: function(data, actions) {
-	            return actions.payment.create({
-	                payment: {
-	                    transactions: [
-	                        {
-	                        	amount
-	                        }
-	                    ]
-	                }
-	            });
-	        },
+			} 
+		}
 
-	        onAuthorize: function(data, actions) {
-	            return actions.payment.execute().then(function() {
-	                window.alert('Payment Complete!');
-	            });
-	        }
+		http.open('POST', `buy/${jsonSend}`, true);
 
-    	}, '#paypal-button-container');
+		http.send();
 
-    	console.log(this.props.total)
 	}
 
 	render() {
 		return (
 
- 			<div id='paypal-button-container' className='contButtonPay'></div>
+ 			<div onClick={() => this.buy(this.props.cart)} className='contButtonPay'>{this.state.status}</div>
 
 		)
 	}
