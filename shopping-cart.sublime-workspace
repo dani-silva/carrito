@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"w",
+				"wait"
+			],
+			[
+				"item",
+				"items"
+			],
+			[
 				"PRO",
 				"product"
 			],
@@ -122,10 +130,6 @@
 			[
 				"bri",
 				"briefcase"
-			],
-			[
-				"w",
-				"width"
 			],
 			[
 				"tra",
@@ -260,47 +264,20 @@
 	"buffers":
 	[
 		{
-			"file": "src/js/container/app.jsx",
+			"file": "server.js",
 			"settings":
 			{
-				"buffer_size": 1943,
+				"buffer_size": 328,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/js/container/component/products.jsx",
+			"file": "routes.js",
 			"settings":
 			{
-				"buffer_size": 1268,
+				"buffer_size": 2866,
 				"encoding": "UTF-8",
-				"line_ending": "Unix",
-				"name": "products.jsx"
-			}
-		},
-		{
-			"file": "src/js/container/component/cart.jsx",
-			"settings":
-			{
-				"buffer_size": 1684,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "public/styles.css",
-			"settings":
-			{
-				"buffer_size": 3794,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/daniel/Descargas/FinShape/index.html",
-			"settings":
-			{
-				"buffer_size": 12035,
 				"line_ending": "Unix"
 			}
 		}
@@ -357,26 +334,46 @@
 	},
 	"expanded_folders":
 	[
-		"/home/daniel/Documentos/proyectos/shopping-cart",
-		"/home/daniel/Documentos/proyectos/shopping-cart/public",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component"
+		"/home/daniel/Documentos/proyectos/shopping-cart"
 	],
 	"file_history":
 	[
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/product.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/cart.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/buttonPaypal.jsx",
+		"/home/daniel/Documentos/proyectos/reactforum/src/server/routes/modules/Forum/Forum.js",
+		"/home/daniel/Documentos/proyectos/reactforum/src/server/routes/modules/Forum/models/forum.js",
+		"/home/daniel/Documentos/proyectos/reactforum/index.js",
+		"/home/daniel/Documentos/proyectos/reactforum/package.json",
 		"/home/daniel/Documentos/proyectos/shopping-cart/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/npm-debug.log",
+		"/home/daniel/Documentos/proyectos/shopping-cart/routes.js",
+		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/passport.js",
+		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/oauth2.js",
+		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/masterAccounts_mdl.js",
+		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/user_mdl.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/index.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/public/styles.css",
-		"/home/daniel/Documentos/proyectos/shopping-cart/package.json",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/app.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/.gitignore",
-		"/home/daniel/Documentos/proyectos/shopping-cart/public/index.html",
 		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/app.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/package.json",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/success.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/fdsa.html",
+		"/home/daniel/Documentos/proyectos/toumap/src/public/index.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/index.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/success.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/server.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/buttonPaypal.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/index.html",
+		"/home/daniel/Documentos/proyectos/finshape/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/toumap/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/userguide/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/toumap-v/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/sucess.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/public/styles.css",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/cart.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/index.jsx",
+		"/home/daniel/Documentos/proyectos/toumap/src/public/index.html",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/product.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/component/products.jsx",
+		"/home/daniel/Descargas/FinShape/index.html",
+		"/home/daniel/Documentos/proyectos/shopping-cart/.gitignore",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionGallery.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/profile.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/package.json",
@@ -395,10 +392,8 @@
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/nav.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/index.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/public/index.html",
-		"/home/daniel/Documentos/proyectos/toumap/server.js",
 		"/home/daniel/Documentos/proyectos/toumap/src/views/index.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/navExplorer.jsx",
-		"/home/daniel/Documentos/proyectos/toumap/webpack.config.js",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/explorer.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/viewHome.jsx",
 		"/home/daniel/Documentos/proyectos/toumap/src/js/containers/components/sectionPromo.jsx",
@@ -470,30 +465,7 @@
 		"/home/daniel/Documentos/proyectos/hera/package.json",
 		"/home/daniel/Documentos/proyectos/toumap/src/views/user.pug",
 		"/home/daniel/Documentos/proyectos/toumap/src/views/place.pug",
-		"/home/daniel/Documentos/proyectos/toumap/public/index.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/views/layout.pug",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/crud-mysql/app.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/controllers/team-controller.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/routers/team-router.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/app.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/views/edit.pug",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/rest-mongod/views/index.pug",
-		"/home/daniel/Documentos/proyectos/toumap/src/dev/index.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/res-express.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/req-express.js",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/fs-express.js",
-		"/home/daniel/Documentos/proyectos/toumap/index.pug",
-		"/home/daniel/Documentos/proyectos/curso-nodejs/express.js",
-		"/home/daniel/Documentos/proyectos/hera/client/src/containers/1.- cargar imagen.",
-		"/home/daniel/Documentos/nodejs/testing/src/app/index.jsx",
-		"/home/daniel/rockyou.txt",
-		"/media/daniel/EA64-0861/toumap/Maquetacion/v1.2/17097412_10154134504945388_3809363069571320768_o.jpg",
-		"/home/daniel/Documentos/nodejs/hera/client/src/containers/DinamicTable.jsx",
-		"/home/daniel/Documentos/nodejs/hera/client/src/containers/ForumContainer.jsx",
-		"/home/daniel/Documentos/nodejs/hera/client/src/routes.js",
-		"/home/daniel/Documentos/nodejs/hera/client/src/containers/Canvas.jsx",
-		"/home/daniel/Documentos/nodejs/hera/docs/hera.sql",
-		"/home/daniel/Documentos/nodejs/hera/docs/fullDB.bak"
+		"/home/daniel/Documentos/proyectos/toumap/public/index.js"
 	],
 	"find":
 	{
@@ -511,6 +483,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"route",
+			"uuidv1",
+			"configAuth",
+			"JSON.stringify(items)",
+			"console",
 			"span",
 			"sectionDesc",
 			"SectionDesc",
@@ -633,12 +610,7 @@
 			"blue",
 			"about",
 			"blue",
-			"left",
-			"family",
-			"comfortaa",
-			"menu",
-			"js",
-			"line-"
+			"left"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -658,145 +630,29 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/js/container/app.jsx",
+					"file": "server.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1943,
+						"buffer_size": 328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1282,
-								1282
+								215,
+								215
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 966.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/js/container/component/products.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1268,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								677,
-								677
-							]
-						],
-						"settings":
-						{
-							"auto_name": "products.jsx",
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 42.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/js/container/component/cart.jsx",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1684,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								496,
-								496
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "public/styles.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3794,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								333,
-								333
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/home/daniel/Descargas/FinShape/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12035,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -804,6 +660,35 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "routes.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2866,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								442,
+								442
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]
@@ -898,7 +783,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 124.0,
+	"side_bar_width": 219.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
