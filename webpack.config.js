@@ -3,13 +3,13 @@
 let webpack = require('webpack');
 let path = require('path');
 
-let DIST_DIR  = path.resolve(__dirname, 'public');
+let DIST_DIR  = path.resolve(__dirname, 'dist');
 let SRC_DIR  = path.resolve(__dirname, 'src');
 
 let config = {
 
 	entry: {
-		bundle: `${ SRC_DIR }/js/index.jsx`
+		bundle: `${ SRC_DIR }/app/index.jsx`
 	},
 
 	output: {
@@ -22,7 +22,7 @@ let config = {
 		rules: [
 			{
 				test: /\.jsx?$/,
-				include: `${ SRC_DIR }/js`,
+				include: `${ SRC_DIR }/app`,
 				loader: 'babel-loader',
 				exclude: '/node_modules/'
 			}

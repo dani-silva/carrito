@@ -1,8 +1,8 @@
 const express = require('express'),
 	app = express(),
-	publicDir = express.static(`${__dirname}/public`),
+	publicDir = express.static(`${__dirname}/dist`),
 	port = (process.env.PORT || 3000),
-	routes = require('./routes');
+	routes = require('./src/server/routes/modules/shoppingCart/shoppingCart');
 
 app.set('port', port)
 

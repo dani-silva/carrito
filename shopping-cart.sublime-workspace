@@ -263,24 +263,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "server.js",
-			"settings":
-			{
-				"buffer_size": 328,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "routes.js",
-			"settings":
-			{
-				"buffer_size": 2866,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -334,23 +316,29 @@
 	},
 	"expanded_folders":
 	[
-		"/home/daniel/Documentos/proyectos/shopping-cart"
+		"/home/daniel/Documentos/proyectos/shopping-cart",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules/shoppingCart"
 	],
 	"file_history":
 	[
+		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules/shoppingCart/shoppingCart.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/routes.js",
 		"/home/daniel/Documentos/proyectos/reactforum/src/server/routes/modules/Forum/Forum.js",
 		"/home/daniel/Documentos/proyectos/reactforum/src/server/routes/modules/Forum/models/forum.js",
 		"/home/daniel/Documentos/proyectos/reactforum/index.js",
 		"/home/daniel/Documentos/proyectos/reactforum/package.json",
-		"/home/daniel/Documentos/proyectos/shopping-cart/webpack.config.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/npm-debug.log",
-		"/home/daniel/Documentos/proyectos/shopping-cart/routes.js",
 		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/passport.js",
 		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/oauth2.js",
 		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/masterAccounts_mdl.js",
 		"/home/daniel/Documentos/proyectos/finshape/src/server/routes/modules/auth/user_mdl.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/index.jsx",
-		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/js/container/app.jsx",
 		"/home/daniel/Documentos/proyectos/shopping-cart/package.json",
 		"/home/daniel/Documentos/proyectos/shopping-cart/public/success.jsx",
@@ -464,8 +452,7 @@
 		"/home/daniel/Documentos/proyectos/hera/webpack.config.js",
 		"/home/daniel/Documentos/proyectos/hera/package.json",
 		"/home/daniel/Documentos/proyectos/toumap/src/views/user.pug",
-		"/home/daniel/Documentos/proyectos/toumap/src/views/place.pug",
-		"/home/daniel/Documentos/proyectos/toumap/public/index.js"
+		"/home/daniel/Documentos/proyectos/toumap/src/views/place.pug"
 	],
 	"find":
 	{
@@ -630,67 +617,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "server.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 328,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								215,
-								215
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "routes.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2866,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								442,
-								442
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -725,6 +653,10 @@
 		]
 	},
 	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
 	"output.exec":
 	{
 		"height": 23.0
