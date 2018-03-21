@@ -9,7 +9,7 @@ let SRC_DIR  = path.resolve(__dirname, 'src');
 let config = {
 
 	entry: {
-		bundle: `${ SRC_DIR }/app/index.jsx`
+		cart: `${ SRC_DIR }/app/index.jsx`
 	},
 
 	output: {

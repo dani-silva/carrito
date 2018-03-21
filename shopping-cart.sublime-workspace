@@ -317,17 +317,23 @@
 	"expanded_folders":
 	[
 		"/home/daniel/Documentos/proyectos/shopping-cart",
+		"/home/daniel/Documentos/proyectos/shopping-cart/dist",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/app",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/server",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes",
 		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules/shoppingCart"
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules/cart"
 	],
 	"file_history":
 	[
 		"/home/daniel/Documentos/proyectos/shopping-cart/server.js",
-		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules/shoppingCart/shoppingCart.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/dist/index.html",
 		"/home/daniel/Documentos/proyectos/shopping-cart/webpack.config.js",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/app/index.jsx",
+		"/home/daniel/Documentos/proyectos/shopping-cart/dist/shoppingCart.css",
+		"/home/daniel/Documentos/finshape/.gitmodules",
+		"/home/daniel/Documentos/proyectos/shopping-cart/src/server/routes/modules/shoppingCart/shoppingCart.js",
 		"/home/daniel/Documentos/proyectos/shopping-cart/routes.js",
 		"/home/daniel/Documentos/proyectos/reactforum/src/server/routes/modules/Forum/Forum.js",
 		"/home/daniel/Documentos/proyectos/reactforum/src/server/routes/modules/Forum/models/forum.js",
@@ -448,11 +454,7 @@
 		"/home/daniel/Documentos/proyectos/finshape-dev/webpack.config.js",
 		"/home/daniel/Documentos/proyectos/finshape-dev/package.json",
 		"/home/daniel/Documentos/pruebas_react/reactjs/src/app/index.js",
-		"/home/daniel/Documentos/pruebas_react/reactjs/src/app/components/Header.js",
-		"/home/daniel/Documentos/proyectos/hera/webpack.config.js",
-		"/home/daniel/Documentos/proyectos/hera/package.json",
-		"/home/daniel/Documentos/proyectos/toumap/src/views/user.pug",
-		"/home/daniel/Documentos/proyectos/toumap/src/views/place.pug"
+		"/home/daniel/Documentos/pruebas_react/reactjs/src/app/components/Header.js"
 	],
 	"find":
 	{
