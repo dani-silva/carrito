@@ -5,7 +5,7 @@ const express = require('express'),
 	dist = express.static(path.join(__dirname, '/src/server/static')),
 	distApp = express.static(path.join(__dirname, '/dist')),
 	port = (process.env.PORT || 3000),
-	routes = require('./src/server/routes/modules/cart/shoppingcart');
+	routes = require('./src/server/routes/modules/shoppingcart/shoppingcart');
 
 app
 	.set('port', port)
