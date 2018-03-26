@@ -31,7 +31,7 @@ class ButtonPaypal extends React.Component {
 			} 
 		}
 
-		http.open('POST', `buy/${jsonSend}`, true);
+		http.open('POST', `shoppingcart/buy/${jsonSend}`, true);
 
 		http.send();
 

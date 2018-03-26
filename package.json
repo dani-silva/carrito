@@ -11,7 +11,9 @@
   "author": "Daniel Silva <jdsc17@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.5.8",
     "express": "^4.15.4",
+    "path": "^0.12.7",
     "paypal-rest-sdk": "^1.8.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

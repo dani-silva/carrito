@@ -22351,7 +22351,7 @@ var Modal = function Modal(props) {
 								props.delete(i);
 							}, className: 'buttonDelete' },
 						' ',
-						_react2.default.createElement('img', { src: 'images/cancel.svg' }),
+						_react2.default.createElement('img', { src: 'images/img-shoppingcart/cancel.svg' }),
 						' '
 					)
 				);
@@ -22404,7 +22404,7 @@ var Cart = function (_React$Component) {
 					{ className: 'contCart' },
 					_react2.default.createElement('img', { onClick: function onClick() {
 							_this2.props.viewModal();
-						}, className: 'buttonCart', src: 'images/cart.svg' }),
+						}, className: 'buttonCart', src: 'images/img-shoppingcart/cart.svg' }),
 					_react2.default.createElement(
 						'div',
 						{ className: 'cartInfo' },
@@ -22497,7 +22497,7 @@ var ButtonPaypal = function (_React$Component) {
 				}
 			};
 
-			http.open('POST', 'buy/' + jsonSend, true);
+			http.open('POST', 'shoppingcart/buy/' + jsonSend, true);
 
 			http.send();
 		}

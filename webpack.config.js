@@ -3,13 +3,13 @@
 let webpack = require('webpack');
 let path = require('path');
 
-let DIST_DIR  = path.resolve(__dirname, 'dist');
+let DIST_DIR  = path.resolve(__dirname, 'dist/app');
 let SRC_DIR  = path.resolve(__dirname, 'src');
 
 let config = {
 
 	entry: {
-		cart: `${ SRC_DIR }/app/index.jsx`
+		shoppingcart: `${ SRC_DIR }/app/index.jsx`
 	},
 
 	output: {

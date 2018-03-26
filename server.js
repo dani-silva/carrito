@@ -1,14 +1,20 @@
 const express = require('express'),
 	app = express(),
-	publicDir = express.static(`${__dirname}/dist`),
+	publicDir = __dirname + '/src/server/views',
+	path = require('path'),
+	dist = express.static(path.join(__dirname, '/src/server/static')),
+	distApp = express.static(path.join(__dirname, '/dist')),
 	port = (process.env.PORT || 3000),
-	routes = require('./src/server/routes/modules/cart/cart');
+	routes = require('./src/server/routes/modules/cart/shoppingcart');
 
-app.set('port', port)
+app
+	.set('port', port)
+	.set('views', publicDir)
+	.set('view engine', 'ejs')
+	.use(dist)
+	.use(distApp)
 
-app.use(publicDir)
+	.use('/shoppingcart', routes)
 
-app.use('/', routes.routes())
-
-app.listen(app.get('port'), () => console.log('servidor corriendo: ' + port));
+	.listen(app.get('port'), () => console.log('servidor corriendo: ' + port));
 

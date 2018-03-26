@@ -21,7 +21,7 @@ const Modal = (props) => (
 		 				<li className='itemModalCart' key={i}>
 			 				<Product style='productModal' product={ product } /> 
 			 				<span className='itemsModal' > { product.items } </span>
-			 				<button onClick={()=>{props.delete(i)}} className='buttonDelete'> <img src='images/cancel.svg' /> </button>
+			 				<button onClick={()=>{props.delete(i)}} className='buttonDelete'> <img src='images/img-shoppingcart/cancel.svg' /> </button>
 			 			</li>
 			 			)
 			 		}
@@ -69,7 +69,7 @@ class Cart extends React.Component {
 	 		
 		 		<div className='contCart'>
 		 			
-					<img onClick={()=>{this.props.viewModal()}} className='buttonCart' src='images/cart.svg' />
+					<img onClick={()=>{this.props.viewModal()}} className='buttonCart' src='images/img-shoppingcart/cart.svg' />
 					
 		 			<div className='cartInfo'>
 
