@@ -161,7 +161,7 @@ button {
 				}
 
 			.process {
-				cursor: progress;
+				cursor: no-drop;
 			}
 
 	.shop {
@@ -242,3 +242,67 @@ button {
 						cursor: not-allowed;
 						opacity: .3;
 					}
+	.receipt {
+		max-width: 30rem;
+		margin: 1.5rem auto;
+		padding: 2rem;
+		background:#fff;
+		border-top: .25rem solid #3498DB;
+	}
+
+		.titleReceipt {
+			color: #3498DB;
+			margin-bottom: 1rem;
+		}
+
+		.textReceipt {
+			font-size: .8rem;
+			line-height: 1.5rem;
+		}
+
+		.textTotalReceipt {
+			margin-bottom: 1rem;
+			font-size: 1rem;
+			font-weight: bold;
+			color: #5DADE2;
+		}
+
+		.receipt .productModal {
+			margin: 1rem 0rem;
+		}
+
+		.messageAlert {
+			padding: .5rem;
+			background: #d9edf7;
+			font-size: .6rem;
+			color: #31708f;
+			border: 1px solid #bce8f1;
+			border-radius: .2rem;
+			margin-bottom: 1rem;
+		}
+
+			.messageAlert strong {
+				font-size: .6rem;
+				padding-right: .2rem;
+			}
+
+		.messageAlert.successAlert {
+			background:#dff0d8;
+			border-color: #d6e9c6;
+			color: #3c763d;
+		}
+
+		.buttonsReceipt {
+			background: #3498DB;
+			padding: .5rem 1rem;
+			font-size: .8rem;
+			border-radius: .25rem;
+			color: #fff;
+			margin-right: 1rem;
+			margin-bottom: 1rem;
+			cursor: pointer;
+		}
+
+		.buttonsReceipt:hover {
+			background: #5DADE2;
+		}

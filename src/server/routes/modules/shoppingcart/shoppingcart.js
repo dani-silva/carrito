@@ -1,6 +1,5 @@
 const express = require('express'),
 	paypal = require('paypal-rest-sdk'),
-	uuidv1 = require('uuid/v1'),
 	Router = express.Router();
 
 paypal.configure({
@@ -11,7 +10,7 @@ paypal.configure({
 
 
 Router
-	.get('/', (req, res) => res.render('shoppingcart'))
+	.get('/', (req, res) => res.render('shoppingcart',{data: null}))
 
 	.post('/buy/:items', (req, res) => {
 		
@@ -35,8 +34,8 @@ Router
 		        "payment_method": "paypal"
 		    },
 		    "redirect_urls": {
-		        "return_url": `http://localhost:3000/shoppingcart/success/${total}`,
-		        "cancel_url": "http://localhost:300/shoppingcart/cancel"
+		        "return_url": `http://localhost:3000/shoppingcart/receipt`,
+		        "cancel_url": "http://localhost:300/shoppingcart"
 		    },
 		    "transactions": [{
 		        "item_list": {
@@ -46,7 +45,7 @@ Router
 		            "currency": "USD",
 		            "total": total
 		        },
-		        "description": "Register master account finshape app"
+		        "description": "Buy licence for finshape app"
 		    }]
 		};
 
@@ -56,8 +55,8 @@ Router
 		    } else {
 		    	for(let i = 0; i < payment.links.length; i++){
 		    		if (payment.links[i].rel === 'approval_url') {
-		    			//res.redirect(payment.links[i].href);
-		    			res.send(payment.links[i].href);
+						//res.redirect(payment.links[i].href);
+						res.send(payment.links[i].href);
 		    		}
 		    	}
 	   		}
@@ -65,41 +64,32 @@ Router
 		 
 	})
 
-	.get('/success/:total', (req, res) => {
+	.get('/receipt', (req, res) => {
 
-		const payerId = req.query.PayerID;
 		const paymentId = req.query.paymentId;
-		const uuid = uuidv1();
+		
+		paypal.payment.get(paymentId, (error, result) => {
+			res.render('shoppingcart', {data: result})
 
-		const execute_payment_json = {
-			"payer_id": payerId,
-			"transactions": [{
-			    "amount": {
-			        "currency": "USD",
-			        "total": req.params.total
-			    }
-			}]
-		};
-
-		paypal.payment.execute(paymentId, execute_payment_json, function (error, payment) {
-			if (error) {
-			    //console.log(error.response);
-			    //res.render('success', {success: error})
-			    res.send(error);
-			    //throw error;
-			} else {
-			    //console.log(JSON.stringify(payment));
-			    //res.render('success', {success: payment});
-			    let send = {
-			    	payment: payment,
-			    	uuid: uuid
-			    }
-			    res.send(send);
-			}
-		});
+		})
 
 	})
 
-	.get('/cancel', (req, res) => res.render('shoppingcart') )
+	.post('/success', (req, res) => {
+		const execute_payment_json = {
+			"payer_id": req.body.payerId,
+			"transactions": [{
+				"amount": req.body.amount
+			}]
+		};
+
+		paypal.payment.execute(req.body.paymentId, execute_payment_json, function (error, payment) {
+			if (error) {
+			    res.send(error);
+			} else {
+			    res.send(payment);
+			}
+		});
+	})
 
 module.exports = Router;

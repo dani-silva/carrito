@@ -9680,7 +9680,7 @@ var _app2 = _interopRequireDefault(_app);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_app2.default, { receipt: receipt }), document.getElementById('app'));
 
 /***/ }),
 /* 84 */
@@ -22189,8 +22189,26 @@ var App = function (_React$Component) {
 		_this.state = {
 			cart: [],
 			modal: false,
-			total: 0
+			total: 0,
+			message: null
 		};
+
+		_this.alert = [{
+			type: 'Error!',
+			message: 'Conecction error.'
+		}, {
+			type: 'Success!',
+			message: 'Correct payment, licenses created.'
+		}, {
+			type: 'Registered!',
+			message: 'Email registered with master license, it is not possible to continue with the purchase.'
+		}, {
+			type: 'No registered!',
+			message: 'The email does not have a master license to link the associated licenses, it is not possible to continue with the purchase.'
+		}, {
+			type: 'Server!',
+			message: ''
+		}];
 
 		_this.products = [{
 			id: 100,
@@ -22212,11 +22230,152 @@ var App = function (_React$Component) {
 		_this.addProduct = _this.addProduct.bind(_this);
 		_this.deleteProduct = _this.deleteProduct.bind(_this);
 		_this.viewModal = _this.viewModal.bind(_this);
+		_this.executePayment = _this.executePayment.bind(_this);
+		_this.consultEmail = _this.consultEmail.bind(_this);
+		_this.registerLicence = _this.registerLicence.bind(_this);
 
 		return _this;
 	}
 
 	_createClass(App, [{
+		key: 'consultEmail',
+		value: function consultEmail(email) {
+			var _this2 = this;
+
+			var t = this;
+			var xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.status == 200 && xhr.readyState == 4) {
+					var response = JSON.parse(xhr.responseText);
+
+					var filterPayer = _this2.props.receipt.transactions[0].item_list.items.filter(function (item) {
+						return item.name == 'Master Account';
+					});
+					// console.log(response)
+					// console.log(filterPayer)
+
+					if (response.status && filterPayer.length == 1) {
+
+						null;
+					} else if (response.status && !filterPayer.length == 1) {
+						t.setState({
+							message: 3
+						});
+					} else if (response.childrenAccounts.length >= 1 && filterPayer.length == 1) {
+						t.setState({
+							message: 2
+						});
+					}
+				}
+			};
+
+			xhr.onerror = function () {
+				_this2.setState({
+					message: 0
+				});
+			};
+
+			xhr.open("POST", '/profile/getLicence', true);
+
+			xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+			xhr.send(JSON.stringify(email));
+		}
+	}, {
+		key: 'componentDidMount',
+		value: function componentDidMount() {
+			if (this.props.receipt != null) {
+				this.consultEmail({ email: this.props.receipt.payer.payer_info.email });
+			}
+		}
+	}, {
+		key: 'registerLicence',
+		value: function registerLicence(paymentData) {
+			var _this3 = this;
+
+			var t = this;
+			var xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.status == 200 && xhr.readyState == 4) {
+					var response = JSON.parse(xhr.responseText);
+
+					console.log(response);
+					if (response.status) {
+
+						t.alert[4].message = response.status;
+
+						t.setState({
+							message: 4
+						});
+					} else {
+						t.setState({
+							message: 1
+						});
+					}
+				}
+			};
+
+			xhr.onerror = function () {
+				_this3.setState({
+					message: 0
+				});
+			};
+
+			xhr.open("POST", '/profile/createLicence', true);
+
+			xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+			xhr.send(JSON.stringify(paymentData));
+		}
+	}, {
+		key: 'executePayment',
+		value: function executePayment(data) {
+			var _this4 = this;
+
+			document.querySelector('.buttonPay').style.cursor = 'no-drop';
+
+			var paymentData = {
+				payerId: data.payer.payer_info.payer_id,
+				paymentId: data.id,
+				amount: data.transactions[0].amount
+			};
+
+			var t = this;
+			var xhr = new XMLHttpRequest();
+
+			xhr.onreadystatechange = function () {
+				if (xhr.status == 200 && xhr.readyState == 4) {
+					var response = JSON.parse(xhr.responseText);
+
+					if (response.httpStatusCode == 400) {
+
+						t.alert[4].message = response.response.message;
+
+						t.setState({
+							message: 4
+						});
+					} else {
+
+						_this4.registerLicence(response);
+					}
+				}
+			};
+
+			xhr.onerror = function () {
+				_this4.setState({
+					message: 0
+				});
+			};
+
+			xhr.open("POST", '/shoppingcart/success', true);
+
+			xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+			xhr.send(JSON.stringify(paymentData));
+		}
+	}, {
 		key: 'addProduct',
 		value: function addProduct(product) {
 			var addCart = this.state.cart;
@@ -22266,8 +22425,9 @@ var App = function (_React$Component) {
 	}, {
 		key: 'render',
 		value: function render() {
+			var _this5 = this;
 
-			console.log(this.props.alert);
+			console.log(this.props.receipt);
 
 			var total = this.state.total;
 
@@ -22275,12 +22435,96 @@ var App = function (_React$Component) {
 				return product.items == 1 ? total += product.price : total += product.price * product.items;
 			});
 
-			return _react2.default.createElement(
-				'div',
-				{ className: 'container' },
-				_react2.default.createElement(_cart2.default, { deleteProduct: this.deleteProduct, modal: this.state.modal, viewModal: this.viewModal, total: total, cart: this.state.cart }),
-				_react2.default.createElement(_products2.default, { modal: this.state.modal, viewModal: this.viewModal, addProduct: this.addProduct, products: this.products, cart: this.state.cart })
-			);
+			if (this.props.receipt == null) {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container' },
+					_react2.default.createElement(_cart2.default, { deleteProduct: this.deleteProduct, modal: this.state.modal, viewModal: this.viewModal, total: total, cart: this.state.cart }),
+					_react2.default.createElement(_products2.default, { modal: this.state.modal, viewModal: this.viewModal, addProduct: this.addProduct, products: this.products, cart: this.state.cart })
+				);
+			} else {
+				return _react2.default.createElement(
+					'div',
+					{ className: 'container' },
+					_react2.default.createElement(_cart2.default, { deleteProduct: this.deleteProduct, modal: this.state.modal, viewModal: this.viewModal, total: total, cart: this.state.cart }),
+					_react2.default.createElement(
+						'div',
+						{ className: 'receipt' },
+						_react2.default.createElement(
+							'h2',
+							{ className: 'titleReceipt' },
+							'Receipt'
+						),
+						_react2.default.createElement(
+							'p',
+							{ className: 'textReceipt' },
+							'Email: ' + this.props.receipt.payer.payer_info.email + ' '
+						),
+						_react2.default.createElement(
+							'p',
+							{ className: 'textReceipt' },
+							'Nombre: ' + this.props.receipt.payer.payer_info.first_name + ' ' + this.props.receipt.payer.payer_info.last_name
+						),
+						_react2.default.createElement(
+							'ul',
+							null,
+							this.props.receipt.transactions[0].item_list.items.map(function (item, index) {
+								return _react2.default.createElement(
+									'li',
+									{ className: 'productModal', key: index },
+									_react2.default.createElement(
+										'h3',
+										null,
+										item.name
+									),
+									_react2.default.createElement(
+										'span',
+										null,
+										'Price: ' + item.price + ' ' + item.currency
+									),
+									_react2.default.createElement(
+										'span',
+										null,
+										'Quantity: ' + item.quantity
+									)
+								);
+							})
+						),
+						_react2.default.createElement(
+							'p',
+							{ className: 'textReceipt textTotalReceipt' },
+							'Total: ' + this.props.receipt.transactions[0].amount.total + ' ' + this.props.receipt.transactions[0].amount.currency
+						),
+						this.state.message || this.state.message === 0 ? _react2.default.createElement(
+							'p',
+							{ className: 'messageAlert ' + (this.state.message == 1 ? 'successAlert' : null) },
+							_react2.default.createElement(
+								'strong',
+								null,
+								this.alert[this.state.message].type,
+								' '
+							),
+							this.alert[this.state.message].message
+						) : null,
+						this.state.message || this.state.message === 0 ? this.state.message === 1 ? _react2.default.createElement(
+							'a',
+							{ className: 'buttonsReceipt', href: '/profile' },
+							'Go to profile'
+						) : null : _react2.default.createElement(
+							'button',
+							{ className: 'buttonsReceipt buttonPay', onClick: function onClick() {
+									return _this5.executePayment(_this5.props.receipt);
+								} },
+							'Pay now'
+						),
+						_react2.default.createElement(
+							'a',
+							{ className: 'buttonsReceipt', href: '/shoppingcart' },
+							'Back to shop'
+						)
+					)
+				);
+			}
 		}
 	}]);
 
@@ -22480,7 +22724,7 @@ var ButtonPaypal = function (_React$Component) {
 		value: function buy(items) {
 
 			this.setState({
-				status: 'Wait'
+				status: 'Process'
 			});
 
 			document.querySelector('.contButtonPay').classList.add('process');

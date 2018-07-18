@@ -13,7 +13,7 @@ class ButtonPaypal extends React.Component {
 	buy(items) {
 
 		this.setState({
-			status: 'Wait'
+			status: 'Process'
 		})
 
 		document.querySelector('.contButtonPay').classList.add('process')
