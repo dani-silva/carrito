@@ -76,8 +76,8 @@ class App extends React.Component {
                 let response = JSON.parse(xhr.responseText);
                 
 				let filterPayer = this.props.receipt.transactions[0].item_list.items.filter( item => item.name == 'Master Account');
-				// console.log(response)
-				// console.log(filterPayer)
+				console.log(response)
+				console.log(filterPayer)
 
 				if (response.status && filterPayer.length == 1) {
 					
@@ -103,7 +103,7 @@ class App extends React.Component {
             })
         }
         
-        xhr.open("POST", '/profile/getLicence', true);
+        xhr.open("POST", '/licence/getLicence', true);
         
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
         
@@ -150,7 +150,7 @@ class App extends React.Component {
             })
         }
         
-        xhr.open("POST", '/profile/createLicence', true);
+        xhr.open("POST", '/licence/createLicence', true);
         
         xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
         

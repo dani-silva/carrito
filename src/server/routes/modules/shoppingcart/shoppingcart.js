@@ -45,7 +45,7 @@ Router
 		            "currency": "USD",
 		            "total": total
 		        },
-		        "description": "Buy licence for finshape app"
+		        "description": "Licence for 1 year."
 		    }]
 		};
 
