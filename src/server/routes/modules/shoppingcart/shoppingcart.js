@@ -4,9 +4,9 @@ const express = require('express'),
 	Router = express.Router();
 
 paypal.configure({
-  'mode': config.mode, //sandbox or live
-  'client_id': config.client_id,
-  'client_secret': config.client_secret
+  'mode': config.paypal.mode, //sandbox or live
+  'client_id': config.paypal.client_id,
+  'client_secret': config.paypal.client_secret
 });
 
 Router
