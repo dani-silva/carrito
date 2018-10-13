@@ -1,0 +1,23 @@
+{
+	"mysql":	{
+		"host": "127.0.0.1",
+		"user": "root",
+		"password": "password",
+		"database": "finshape",
+		"userTable": "Users",
+		"usernameField": "username",
+		"passwordField": "password",
+		"availableStrategies": ["mysql"],
+		"encryptionMethod": "bcrypt"
+	},
+	"mongo":
+	{
+		"url" : "mongodb://localhost/passport"
+	},
+	"paypal": 
+	{
+		"mode": 	"sandbox",
+		"client_id"	:	"AfM7yYBMajgKJEMcHH5Y8vAA1piwnG0cAt42CtitV03hTg0JhyslqVbMxe2fha1abw_ZUddc88othJ3Y",
+		"client_secret":	"EIzgVUFMRQNhnS_wvNF3pB7ho1-_grSEouO-Zed3Y0uB4_ITorW4q4ckSiHWA_2nYW3FGPLNeHwBi44G"
+	}
+}

@@ -1,13 +1,13 @@
 const express = require('express'),
 	paypal = require('paypal-rest-sdk'),
+	config = require('config'),
 	Router = express.Router();
 
 paypal.configure({
-  'mode': 'sandbox', //sandbox or live
-  'client_id': 'AfM7yYBMajgKJEMcHH5Y8vAA1piwnG0cAt42CtitV03hTg0JhyslqVbMxe2fha1abw_ZUddc88othJ3Y',
-  'client_secret': 'EIzgVUFMRQNhnS_wvNF3pB7ho1-_grSEouO-Zed3Y0uB4_ITorW4q4ckSiHWA_2nYW3FGPLNeHwBi44G'
+  'mode': config.mode, //sandbox or live
+  'client_id': config.client_id,
+  'client_secret': config.client_secret
 });
-
 
 Router
 	.get('/', (req, res) => res.render('shoppingcart',{data: null}))
@@ -34,8 +34,8 @@ Router
 		        "payment_method": "paypal"
 		    },
 		    "redirect_urls": {
-		        "return_url": `http://localhost:3000/shoppingcart/receipt`,
-		        "cancel_url": "http://localhost:300/shoppingcart"
+		        "return_url": `${config.server.host}:${config.server.port}/shoppingcart/receipt`,
+		        "cancel_url": `${config.server.host}:${config.server.port}/shoppingcart`
 		    },
 		    "transactions": [{
 		        "item_list": {
